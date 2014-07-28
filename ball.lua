@@ -35,9 +35,6 @@ function Ball:update(dt)
   self.pos[2] = self.pos[2] + self.spd[2] * dt
 
   -- keep it on the screen
-  if self.pos[1] > love.window.getWidth() - self.radius or self.pos[1] < self.radius then
-    self.spd[1] = -self.spd[1]
-  end
   if self.pos[2] > love.window.getHeight() - self.radius then
     self.pos[2] = love.window.getHeight() - self.radius - 1
     self.spd[2] = math.min(-self.spd[2], 250)

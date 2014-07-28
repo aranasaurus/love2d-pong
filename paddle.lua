@@ -14,7 +14,8 @@ Paddle = {
       pos = pos or { x, love.window.getHeight()/2 - h/2 },
       clr = clr or { 255, 255, 255 },
       w = w,
-      h = h
+      h = h,
+      score = 0
     }, Paddle)
   end
 }
